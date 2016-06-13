@@ -11,18 +11,25 @@ namespace AlgorithmsAndDataStructures
     {
         static void Main(string[] args)
         {
-            #region Lesson1Task1
-
+            //Init
             var words = new[] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
             var linkedList = new LinkedList<string>(words);
 
+            //TASK1
             linkedList.RemoveMultiplesOf(5);
+            linkedList.OutputConsole("RemoveMultiplesOf:");
 
-            Console.WriteLine("Напишите программу, которая удаляет все узлы связанного списка, находящиеся в позициях с номерами кратными пяти.");
-            foreach (var item in linkedList)
-                Console.WriteLine(item);
+            //TASK2
+            linkedList.AddAfterRange(linkedList.First.Next.Next.Next.Next,"node1","node2","node3");
+            linkedList.OutputConsole("AddAfterRange:");
 
-            #endregion
+            //TASK3
+            linkedList.AddFirstAndLast("first", "last");
+            linkedList.OutputConsole("AddFirstAndLast:");
+
+            //TASK4
+            linkedList.RemoveAll();
+            linkedList.OutputConsole("RemoveAll:");
 
             Console.ReadKey();
         }
