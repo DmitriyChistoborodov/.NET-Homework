@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AlgorithmsAndDataStructures.Lesson1;
+using AlgorithmsAndDataStructures.Lesson2;
 
 namespace AlgorithmsAndDataStructures
 {
@@ -30,6 +31,16 @@ namespace AlgorithmsAndDataStructures
             //TASK4
             linkedList.RemoveAll();
             linkedList.OutputConsole("RemoveAll:");
+
+            //TASK5
+            var customArrayList = new CustomArrayList<string>(new LinkedList<string>(words));
+            customArrayList.OutputConsole();
+
+            //TASK6
+            customArrayList = new CustomArrayList<string>(new[] { "Dmitriy", "Artem", "Boris", "Andrey" });
+            customArrayList.Add("Georgy");
+            customArrayList.Add("Alla");
+            customArrayList.OutputConsole();
 
             Console.ReadKey();
         }
