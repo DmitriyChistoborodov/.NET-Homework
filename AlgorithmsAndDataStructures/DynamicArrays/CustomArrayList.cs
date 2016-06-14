@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmsAndDataStructures.Lesson2
+namespace DynamicArrays
 {
     public class CustomArrayList<T> : ICollection<T>
     {

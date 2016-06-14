@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgorithmsAndDataStructures.Lesson1
+namespace LinkedLists
 {
     public static class LinkedListUtils
     {

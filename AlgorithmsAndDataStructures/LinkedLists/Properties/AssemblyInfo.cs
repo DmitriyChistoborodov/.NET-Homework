@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("AlgorithmsAndDataStructures")]
+[assembly: AssemblyTitle("LinkedLists")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AlgorithmsAndDataStructures")]
+[assembly: AssemblyProduct("LinkedLists")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("82278c14-997b-4e91-a3dc-6ebbf563eef0")]
+[assembly: Guid("40bb6749-a93f-4abd-bf0d-ca21d0cb70ac")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
