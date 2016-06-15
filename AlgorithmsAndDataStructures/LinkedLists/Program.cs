@@ -12,7 +12,7 @@ namespace LinkedLists
         {
             //Init
             var words = new[] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
-            var linkedList = new LinkedList<string>(words);
+            var linkedList = new CustomLinkedList<string>(words);
 
             // Напишите программу, которая удаляет все узлы связанного списка, 
             // находящиеся в позициях с номерами кратными пяти.
