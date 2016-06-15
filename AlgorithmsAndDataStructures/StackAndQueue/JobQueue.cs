@@ -28,21 +28,32 @@ namespace StackAndQueue
             items.Insert(index < 0 ? 0 : index , new KeyValuePair<Action, int>(func, priority));
         }
 
-        public Action Dequeue()
-        {
-            if(items.Count==0)
-                throw new InvalidOperationException("Очередь пуста");
-
-            var item = items[0];
-            items.RemoveAt(0);
-            return item.Key;
-        }
-
         public void CompleteAll()
         {
             foreach (var item in items)
                 item.Key();
-            
+
+        }
+
+        //TASK: Дополните методами DequeueLast() и DequeueFirst().  
+        public Action DequeueFirst()
+        {
+            if(items.Count==0)
+                throw new InvalidOperationException("Очередь пуста");
+
+            var item = items.First();
+            items.Remove(items.First());
+            return item.Key;
+        }
+
+        public Action DequeueLast()
+        {
+            if (items.Count == 0)
+                throw new InvalidOperationException("Очередь пуста");
+
+            var item = items.Last();
+            items.Remove(items.Last());
+            return item.Key;
         }
     }
 
