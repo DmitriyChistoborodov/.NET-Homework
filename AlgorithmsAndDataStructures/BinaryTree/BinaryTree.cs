@@ -124,16 +124,6 @@ namespace BinaryTree
                 }
             }
         }
-
-        private BinaryTreeNode<T> GetLastLeft(BinaryTreeNode<T> current)
-        {
-            while (true)
-            {
-                if (current.Left != null)
-                    current = current.Left;
-                else return current;
-            }
-        }
     }
 
     public class BinaryTreeNode<TNode> : IComparable<TNode> where TNode : IComparable<TNode>
