@@ -21,7 +21,7 @@ namespace StackAndQueue
             tasks.Enqueue(() => Console.WriteLine("priority: 9"), 9);
             tasks.Enqueue(() => Console.WriteLine("priority: 1"), 1);
 
-            tasks.Dequeue()();
+            tasks.DequeueFirst()();
 
             Console.WriteLine();
 
