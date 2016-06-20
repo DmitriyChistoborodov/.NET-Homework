@@ -72,5 +72,12 @@ namespace Sets
 
             return result.Count == 0;
         }
+
+        public HashSet SymmetricDifference(HashSet other)
+        {
+            var union = Union(other);                // 1 2 3 4 5 6
+            var intersection = Intersection(other);  // 3 4
+            return union.Difference(intersection);      // 1 2 5 6
+        }
     }
 }
