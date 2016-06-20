@@ -12,14 +12,14 @@ namespace DynamicArrays
         {
             var words = new[] { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
 
-            // Реализовать динамический массив на основе двусвязного списка (LinkedList<T>). 
-            var customArrayList = new CustomArrayList<string>(new LinkedList<string>(words));
-            customArrayList.OutputConsole();
-
             // Реализовать динамический массив на основе статического. 
-            customArrayList = new CustomArrayList<string>(words);
-            customArrayList.Add("Eleven");
-            customArrayList.OutputConsole();
+            var ArrayDynamicList = new ArrayDynamicList<string>(words);
+            ArrayDynamicList.OutputConsole();
+
+            // Реализовать динамический массив на основе двусвязного списка (LinkedList<T>).
+            var LinkedDynamicList = new LinkedDynamicList<string>(words);
+            LinkedDynamicList.Add("Eleven");
+            LinkedDynamicList.OutputConsole();
 
             Console.ReadKey();
         }

@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace DynamicArrays
 {
-    public class CustomArrayList<T> : ICollection<T>
+    //// TASK: Реализовать динамический массив на основе статического. 
+    public class ArrayDynamicList<T> : ICollection<T>
     {
         public int Count { get; private set; }
         public int Capacity
@@ -32,10 +33,10 @@ namespace DynamicArrays
            
         }
 
-        public CustomArrayList() : this(0)
+        public ArrayDynamicList() : this(0)
         { }
 
-        public CustomArrayList(int capacity)
+        public ArrayDynamicList(int capacity)
         {
             if (capacity < 0)
                 throw new ArgumentException(nameof(capacity));
@@ -43,24 +44,7 @@ namespace DynamicArrays
             items = new T[capacity];
         }
 
-        /// <summary>
-        /// TASK: Реализовать динамический массив на основе двусвязного списка (LinkedList<T>). 
-        /// </summary>
-        /// <param name="linkedList"></param>
-        public CustomArrayList(LinkedList<T> linkedList) : this(linkedList.Count)
-        {
-            var i = 0;
-            foreach (var value in linkedList)
-                items[i++] = value;
-
-            Count = i;
-        }
-
-        /// <summary>
-        /// TASK: Реализовать динамический массив на основе статического. 
-        /// </summary>
-        /// <param name="array"></param>
-        public CustomArrayList(T[] array): this(array.Length)
+        public ArrayDynamicList(T[] array): this(array.Length)
         {
             Array.Copy(array, items, array.Length);
             Count = items.Length;
