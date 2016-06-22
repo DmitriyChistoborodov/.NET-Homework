@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sort
 {
-    public static class SortUtils
+    public static class BubbleSort
     {
-        private static void Swap<T>(this T[] items, int left, int right)
+        public static void Swap<T>(this T[] items, int left, int right)
         {
             if (left != right)
             {
@@ -20,7 +20,7 @@ namespace Sort
 
         // Метод реализует сортировку пузырьком 
         // Author: это дано как пример в уроке
-        public static void BubbleSort(this int[] items)
+        public static void sourceBubbleSort(this int[] items)
         {
             bool swapped;
 
@@ -64,6 +64,8 @@ namespace Sort
                 }
             }
         }
+
+
 
     }
 }
