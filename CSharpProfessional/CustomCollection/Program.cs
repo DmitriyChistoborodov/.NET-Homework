@@ -11,7 +11,7 @@ namespace CustomCollection
         static void Main(string[] args)
         {
             Console.WriteLine("Нечётные числа в квадрате:"); // TASK 1
-
+          
             var collection = GetOddNumbers(new[] { 5, 1, 7, 5, 3, 4, 1, 7, 5, 4 });
 
             foreach (var item in collection)
@@ -30,7 +30,6 @@ namespace CustomCollection
 
             Console.ReadKey();
         }
-
 
         //TASK 1: Cоздайте метод, который в качестве аргумента принимает массив целых чисел и возвращает 
         //коллекцию квадратов всех нечетных чисел массива.Для формирования коллекции используйте оператор yield.
